@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+    <script>
+        function login()
+        {
+            var username = document.forms["myform"]["username"].value;
+            var password = document.forms["myform"]["password"].value;
+
+            if(username=="silvernail.ba@gmail.com")
+            {
+                if(password=="Password$")
+                {
+                    alert("Login Successful");
+                }
+                else{
+                    alert("Login Failed - Incorrect Username or Password");
+                }
+            }
+        }   
+    </script>
+    <form name="myform">
+        Username:<input type="text" name="username"><br>
+        Password:<input type="password" name="password"><br>
+        <input type="Submit" onclick="login()">
+    </form>
+</body>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="js/main.js"></script>
+<script src="userClass.js"></script>
+<head>
+	<title>Flash Cards - Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<style>
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    border: 1px solid #e7e7e7;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+    border-right: 1px solid #bbb;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li:last-child {
+      border-right: none;
+  }
+  
+  
+  li a:hover {
+    background-color: rgb(212, 212, 212);
+  }
+
+  .active {
+  background-color: #4286f4;
+  color: #e7e7e7;
+}
+	
+	</style>
+</head>
+<body>
+	
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="create.html">Create</a></li>
+			<li><a href="about.html">About</a></li>
+			<li style="float:right"><a class="active" href="loginPage.html">Login</a></li>
+		  </ul>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-51">
+						BSAT Flash Cards - Login
+					</span>
+
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
+						<input class="input100" type="text" name="username" placeholder="Username" id="userID"/>
+						<span class="focus-input100"></span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password" id="password"/>
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="flex-sb-m w-full p-t-3 p-b-24">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="http://www.google.com" class="txt1">
+								Forgot?
+							</a>
+						</div>
+					</div>
+					
+					<div class="container-login100-form-btn m-t-17">
+						<Button class="login100-form-btn" onclick="getUsername()">
+							Login
+						</Button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+	
+
+</body>
+</html>
