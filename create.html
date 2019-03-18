@@ -65,6 +65,73 @@ ul {
   color: #e7e7e7;
 }
 
+.listtable textarea{
+    resize: none;
+    line-height: 20px;
+    font: 18px;
+    text-align: center;
+    width: 200px;
+    height: 46px;
+    border: 1px solid;
+
+}
+
+table{
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+table td{
+    border: 1px dashed;
+    border-radius: 2px;
+
+}
+
+.button {
+  background-color: #4286f4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+}
+
+
+.cnt-tbl {
+    display: table;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    width: 900px;
+}
+
+.cnt-cell{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.text2 textarea{
+    resize: none;
+    line-height: 20px;
+    font: 21px;
+    text-align: center;
+    width: 200px;
+    height: 72px;
+    border: 1px solid;
+}
+
+.center{
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+
+}
+
 </style>
 </head>
 <body>
@@ -75,7 +142,48 @@ ul {
         <li style="float:right"><a class="active" href="loginPage.html">Login</a></li>
       </ul>
       <br>
-      <p>THIS IS THE CREATE SCREEN!!</p>
+      <br>
+      <br>
+    <div id="cnt">
+    <input type="text" placeholder="ex: History">
+    <table class="listtable text2" cellspacing="30" cellpadding="30">
+      <tbody><tr>
+        <td>
+    <form></form>
+    <textarea class="textarea" placeholder="Enter Question Here..." rows="3" cols="15"></textarea>
+        </td>
+        <td>
+    <form></form>
+    <textarea class="textarea" placeholder="Enter Answer Here..." rows="3" cols="15"></textarea>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+    </div>
+
+    <div id="cnt">
+            <table class="listtable text2" cellspacing="30" cellpadding="30">
+              <tbody><tr>
+                <td>
+            <form></form>
+            <textarea class="textarea" placeholder="Enter Question Here..." rows="3" cols="15"></textarea>
+                </td>
+                <td>
+            <form></form>
+            <textarea class="textarea" placeholder="Enter Answer Here..." rows="3" cols="15"></textarea>
+                </td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+
+
+    <div class="center">
+    <button class="button" type="button">Save Set</button>
+    </div>
+    <div class="center" style="font-size:26px; padding:30px; ">
+        <span id="t" style="cursor:pointer; border-bottom:1px dashed #000">Add Another Card</span> OR <span id="tdel" style="cursor:pointer; border-bottom:1px dashed #000">Remove Last Card</span>
+    </div>
 </body>
 
 
