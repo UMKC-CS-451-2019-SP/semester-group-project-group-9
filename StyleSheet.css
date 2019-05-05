@@ -100,7 +100,7 @@ vertical-align: central;
 
 /*-----------------------------------------------*/
 
-ul {
+/*ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -132,7 +132,7 @@ li {
 
     li a:hover {
         background-color: rgb(212, 212, 212);
-    }
+    }*/
 
 .active {
     background-color: #4286f4;
